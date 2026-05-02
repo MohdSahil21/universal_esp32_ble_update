@@ -1,0 +1,16 @@
+device:
+  name_prefix: "ESP32"   # match devices starting with this
+  service_uuid: "00008020-0000-1000-8000-00805f9b34fb"
+
+ota:
+  data_uuid: "00008020-0000-1000-8000-00805f9b34fb"
+  control_uuid: "00008022-0000-1000-8000-00805f9b34fb"
+  firmware_path: "main.bin"
+  version: "1.0.3"
+
+connection:
+  timeout: 10
+  retry: 2
+
+logging:
+  history_file: "history.csv"
